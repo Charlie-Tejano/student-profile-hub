@@ -1,1 +1,158 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(180deg, #0a0a0a 0%, #1a1a1a 50%, #252525 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.page {
+  min-height: calc(100vh - 56px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Language toggle */
+.lang-toggle {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 12px;
+  z-index: 10;
+}
+
+.lang-btn {
+  padding: 8px 16px;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  border-radius: 999px;
+  text-transform: uppercase;
+  transition: all 0.25s ease;
+}
+
+.lang-btn:hover,
+.lang-btn.active {
+  background: white;
+  color: black;
+}
+
+/* Centering the Profile Card */
+.profile-card {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  text-align: center;
+}
+
+.profile-picture {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 20px auto;
+  border: 3px solid white;
+}
+
+.name {
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 8px;
+}
+
+/* Centering the Tagline */
+.tagline {
+  font-size: 14px;
+  color: #aaa;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 30px;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: white;
+  margin: 20px 0 15px;
+}
+
+/* Links - White buttons, black all-caps text */
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.link-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 16px 20px;
+  border-radius: 8px;
+  background: white;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+}
+
+.link-btn i {
+  font-size: 18px;
+}
+
+.link-btn span {
+  text-decoration: none;
+}
+
+/* Hover */
+.link-btn:hover {
+  background: #e0e0e0;
+  transform: translateY(-2px);
+}
+
+/* Hidden class */
+.hidden { display: none !important; }
+
+/* Responsive */
+@media (max-width: 480px) {
+  .name { font-size: 22px; }
+  .tagline { font-size: 12px; }
+  .link-btn { padding: 14px 16px; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
