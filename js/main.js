@@ -12,39 +12,30 @@ document.addEventListener("DOMContentLoaded", () => {
   function setLanguage(lang) {
     const isEn = lang === "en";
 
-    /*
-     Toggle content blocks...
+    // Toggle content blocks
 
-     ==================================================================================
-     When isEn is true - it shows English content, the opposite is applied for Spanish
-     ==================================================================================
-
-     */
+    // Show English content if isEn is true
     contentEn?.classList.toggle("hidden", !isEn);
     contentEs?.classList.toggle("hidden", isEn);
 
-    /*
-     Toggle link blocks...
+    // Toggle link blocks
 
-     ================================================================================
-     When isEn is true - it shows English links, the opposite is applied for Spanish
-     ================================================================================
-
-     */
+    // Show English links if isEn is true
     linksEn?.classList.toggle("hidden", !isEn);
     linksEs?.classList.toggle("hidden", isEn);
 
-    // Toggles button active state
+    // Toggle button active state
+
+    // Toggle between active states for language buttons
     btnEn?.classList.toggle("active", isEn);
     btnEs?.classList.toggle("active", !isEn);
 
     document.documentElement.lang = lang;
   }
 
-  // When clicked, it sets the language
   btnEn?.addEventListener("click", () => setLanguage("en"));
   btnEs?.addEventListener("click", () => setLanguage("es"));
 
-  // Default language when the page loads
+  // Default language on load
   setLanguage("en");
 });
